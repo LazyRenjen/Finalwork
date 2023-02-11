@@ -1,0 +1,163 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: left;
+    flex-direction: column;
+    text-shadow: 6px 0 20px #ffffff;
+}
+nav ul li{
+    display: inline-flex;
+    margin: 5px 15px;
+    font-weight: bold;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    background: #ffffff;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50px;
+}
+.contact
+{
+    position:relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  rgb(210, 109, 42);
+}
+.content
+{
+    text-align: center;
+    padding-bottom: 2%;
+}
+.content h2
+{
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.content p
+{
+    font-weight:500;
+    font-size: larger;
+    color: #fff;
+}
+.container
+{
+    background-color: rgb(155, 155, 122);
+    width: 80%;
+    height: 75vh;
+    display: flex;
+}
+.contentInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contentInfo h3{
+    font-size: 25px;
+}
+.contentInfo p{
+    font-size: 20px;
+}
+.box
+{
+    padding: 40px ;
+    display: flex;
+    flex-direction: row;
+}
+.icon
+{
+    font-size: 30px;
+}
+img{
+    padding-top: 10%;
+    height: 30px;
+}
+img:hover
+{
+    transform: scale(1.5);
+    z-index: 2;
+}
+.text
+{
+    display: flex;
+    margin-left: 20px;
+    color: #0b00899f;
+    flex-direction: column;
+}
+.contactform
+{
+    width: 60%;
+    padding: 15px 20px;
+    background: #2b70b1;
+}
+.inputbox{
+    color: #fff;
+}
+.contactform h2
+{
+    width: 40%;
+    color: #ffffff;
+}
+.contactform inputbox
+{
+    width: 40%;
+    position: relative;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff1f1;
+    resize: none;
+}
+.contactform .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.inputbox input[type="submit"]:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    background-color: #2ad9dc;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
